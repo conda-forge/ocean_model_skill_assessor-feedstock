@@ -1,5 +1,5 @@
 {% set name = "ocean_model_skill_assessor" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/axiom-data-science/ocean-model-skill-assessor/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: b30ea51fb327e539d46c5d9f7e83361c2298a7a57189a1e71953b17c207c1f0b
+  sha256: 66c461861d12424b3b60de8684d061dbc3e2611d6d49bdb468bde1e7edcdacd8
 
 build:
   noarch: python
@@ -23,7 +23,9 @@ requirements:
     - setuptools-scm
   run:
     - cartopy
+    - cf_xarray
     - extract_model
+    - importlib_resources
     - matplotlib-base
     - netcdf4
     - numpy
