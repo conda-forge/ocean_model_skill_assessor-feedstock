@@ -31,6 +31,7 @@ requirements:
     - numpy
     - ocean_data_gateway
     - pandas
+    - python >=3.6
     - requests
     - scipy
     - xarray
