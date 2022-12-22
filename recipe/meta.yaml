@@ -1,5 +1,5 @@
 {% set name = "ocean_model_skill_assessor" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://github.com/axiom-data-science/ocean-model-skill-assessor/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 66c461861d12424b3b60de8684d061dbc3e2611d6d49bdb468bde1e7edcdacd8
+  sha256: 543c2fd6a2727e8bb3146be00c8ca56b57a9d32a85d1438bb727acbeb6cf3b4a
 
 build:
   noarch: python
   number: 0
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -48,7 +48,7 @@ about:
   home: https://github.com/axiom-data-science/ocean-model-skill-assessor
   license: MIT
   license_file: LICENSE.txt
-  summary: 'A package to fully run the comparison between data and model to assess model skill.'
+  summary: A package to fully run the comparison between data and model to assess model skill.
   doc_url: https://ocean-model-skill-assessor.readthedocs.io/
   dev_url: https://github.com/axiom-data-science/ocean-model-skill-assessor
 
