@@ -1,11 +1,11 @@
-About ocean-model-skill-assessor
-================================
+About ocean-model-skill-assessor-feedstock
+==========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ocean_model_skill_assessor-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/axiom-data-science/ocean-model-skill-assessor
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ocean_model_skill_assessor-feedstock/blob/main/LICENSE.txt)
 
 Summary: A package to fully run the comparison between data and model to assess model skill.
 
