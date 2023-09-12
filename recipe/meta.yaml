@@ -24,8 +24,11 @@ requirements:
   run:
     - aiohttp
     - alphashape
+    - appdirs
     - cf_pandas
     - cf_xarray
+    - cmocean
+    - datetimerange
     - extract_model
     - intake
     - intake-axds
@@ -34,9 +37,12 @@ requirements:
     - matplotlib-base
     - numpy
     - pandas
+    - pyproj
     - python >=3.8
+    - pyyaml
     - requests
     - scipy
+    - shapely
     - tqdm
     - xarray
 
