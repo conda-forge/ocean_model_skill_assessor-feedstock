@@ -1,5 +1,5 @@
 {% set name = "ocean-model-skill-assessor" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ocean-model-skill-assessor-{{ version }}.tar.gz
-  sha256: bf338111a39cdaf2ae7f99374fa46d30c56daabe6d11ee51d02094ad70ea3edb
+  sha256: 2c52be93e436cdc117fea1e3db4e85bf102cf22e7a6f5dc4a2e6a5265fc348f3
 
 build:
   entry_points:
