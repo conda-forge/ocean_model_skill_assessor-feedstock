@@ -45,6 +45,8 @@ requirements:
     - shapely
     - tqdm
     - xarray
+    - xcmocean
+    - xgcm
 
 test:
   imports:
