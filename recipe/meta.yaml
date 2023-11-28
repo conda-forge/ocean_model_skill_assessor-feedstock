@@ -25,6 +25,7 @@ requirements:
     - aiohttp
     - alphashape
     - appdirs
+    - cartopy
     - cf_pandas
     - cf_xarray
     - cmocean
