@@ -1,5 +1,5 @@
 {% set name = "ocean-model-skill-assessor" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ocean-model-skill-assessor-{{ version }}.tar.gz
-  sha256: b7ab15f2a84c09008f54338856e7ed80417cdef3a7437d0fa43e82dbb10e8b42
+  sha256: e2ff02b947a69cd8e523201c7499674a76d68feffe7972da2d00a5a03f745c9a
 
 build:
   entry_points:
@@ -25,6 +25,7 @@ requirements:
     - aiohttp
     - alphashape
     - appdirs
+    - cartopy
     - cf_pandas
     - cf_xarray
     - cmocean
