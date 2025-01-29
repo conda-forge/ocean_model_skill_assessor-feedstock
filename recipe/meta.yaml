@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: ffa5bc0d81a43bb9aff3a78d8a36bc2b77d4066c55591af53a3517a8ddb3a45d
 
 build:
@@ -14,12 +14,12 @@ build:
     - omsa=ocean_model_skill_assessor.CLI:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools-scm
   run:
     - aiohttp
@@ -39,7 +39,7 @@ requirements:
     - numpy
     - pandas
     - pyproj
-    - python >=3.8
+    - python >={{ python_min }}
     - pyyaml
     - requests
     - scipy
@@ -57,6 +57,7 @@ test:
     - omsa --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/axiom-data-science/ocean-model-skill-assessor
